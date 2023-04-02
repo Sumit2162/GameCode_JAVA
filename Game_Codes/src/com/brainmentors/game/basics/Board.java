@@ -31,7 +31,7 @@ public class Board extends JPanel implements GameConstants,ActionListener,KeyLis
 	Power player2Power;
 	boolean isGameOver;
 	Board() throws Exception{
-//		setBackground(Color.BLACK);
+
 		loadbackground();
 	    Sumit = new SumitPlayer();
 	    Suraj = new SurajPlayer();
@@ -65,7 +65,6 @@ public class Board extends JPanel implements GameConstants,ActionListener,KeyLis
 	}
     @Override
     protected void paintComponent(Graphics pen) {
-    	// TODO Auto-generated method stub
     	super.paintComponent(pen);
         pen.drawImage(backgroundimage, 0,0,BOARD_WIDTH,BOARD_HEIGHT,null );
         displayMessage(pen);
@@ -82,7 +81,6 @@ public class Board extends JPanel implements GameConstants,ActionListener,KeyLis
 	}
 	@Override
 	public void keyTyped(KeyEvent e) {
-		// TODO Auto-generated method stub
 		
 	}
 	public void displayMessage(Graphics pen){
@@ -92,12 +90,7 @@ public class Board extends JPanel implements GameConstants,ActionListener,KeyLis
 		pen.drawString("Game Over......",BOARD_HEIGHT/2+55,BOARD_WIDTH/4);                                
 			timer.stop();
 		}
-//		if(playerAttackHit()) {
-//			pen.setFont(new Font("times",Font.BOLD,50));
-//			pen.setColor(Color.RED);
-//			pen.drawString("Game Over",BOARD_HEIGHT/2,BOARD_WIDTH/2 );                                    Colliding.🦾.....", 100, 50);
-//			return;
-//		pen.drawString("", 100, 50);
+
 	}
 	public boolean playerAttackHit() {
 		if(isCollide()) {
@@ -135,7 +128,6 @@ public class Board extends JPanel implements GameConstants,ActionListener,KeyLis
 	}
 	@Override
 	public void keyPressed(KeyEvent e) {
-		// TODO Auto-generated method stub
 		if(e.getKeyCode()==KeyEvent.VK_S) {
 			Sumit.setAction(KICK);
 			Sumit.setAttacking(true);
@@ -169,7 +161,6 @@ public class Board extends JPanel implements GameConstants,ActionListener,KeyLis
 	}
 	@Override
 	public void keyReleased(KeyEvent e) {
-		// TODO Auto-generated method stub
 		
 	}
     
