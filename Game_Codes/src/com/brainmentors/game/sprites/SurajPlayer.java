@@ -24,10 +24,7 @@ public class SurajPlayer extends Player{
            	defaultMove[1] = fullImage.getSubimage(162, 1145, 63, 120);
            	defaultMove[2] = fullImage.getSubimage(285, 1144, 57, 117);
            	defaultMove[3] = fullImage.getSubimage(410, 1140, 55, 120);
-//           	defaultMove[4] = fullImage.getSubimage(535, 1143, 54, 119);
-//           	defaultMove[5] = fullImage.getSubimage(666, 1147, 55, 118);
-//           	defaultMove[6] = fullImage.getSubimage(791, 1153, 60, 114);
-//           	defaultMove[7] = fullImage.getSubimage(926, 1152, 61, 115);
+
            	defaultMove[4] = fullImage.getSubimage(47, 1147, 69, 117);
            	defaultMove[5] = fullImage.getSubimage(162, 1145, 63, 120);
            	defaultMove[6] = fullImage.getSubimage(285, 1144, 57, 117);
@@ -35,14 +32,7 @@ public class SurajPlayer extends Player{
            }
 	@Override
 	protected void hit() {
-//		 hitMove[0]= fullImage.getSubimage(981,1839,59,108);        //jump rolling
-//		 hitMove[1]= fullImage.getSubimage(869,1843,57,130);
-//		 hitMove[2]= fullImage.getSubimage(763,1845,56,117);
-//		 hitMove[3]= fullImage.getSubimage(643,1852,81,65);
-//		 hitMove[4]= fullImage.getSubimage(543,1842,64,72);
-//		 hitMove[5]= fullImage.getSubimage(420,1845,73,76);
-//		 hitMove[6]= fullImage.getSubimage(292,1862,77,66);
-//		 hitMove[7]= fullImage.getSubimage(164,1831,60,109);	
+	
 		 hitMove[0]= fullImage.getSubimage(46,2336,62,116);       //to protect
 		 hitMove[1]= fullImage.getSubimage(176,2336,71,116);
 		 hitMove[2]= fullImage.getSubimage(331,2342,82,114);
